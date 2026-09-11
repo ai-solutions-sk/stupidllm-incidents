@@ -59,6 +59,15 @@ is one.
 ## A note on severity
 
 Severity is assigned against the
-[published rubric](https://www.stupidllm.com/methodology/), not by feel. It
-weighs whether the loss was recoverable, whether it reached production, whether
-the user had authorised the action, and whether the agent misreported afterwards.
+[published rubric](https://www.stupidllm.com/methodology/), not by feel. The
+rubric scores damage only: what was destroyed, leaked or lost, in four bands.
+
+An earlier version of this paragraph said severity also weighed whether the
+loss was recoverable, whether it reached production, whether the user had
+authorised the action, and whether the agent misreported afterwards. It did
+not, and never had. Those four are things a reader can check against a source
+independently of the number, which is the argument for recording them as
+fields of their own rather than folding them into the score. Which of them
+belong in severity at all is an open question; the first blind re-scoring
+round (`ops/inter-rater/` in the source repo) exists to find out. Corrected
+2026-09-11.

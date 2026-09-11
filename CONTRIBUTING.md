@@ -58,12 +58,16 @@ Corrections are more valuable than new entries and are reviewed faster. If a
 record overstates damage, misattributes a command, names the wrong version, or
 its source has since been retracted — open a PR or an issue.
 
-One real example, so the standard is clear: STUPID-2026-0078 was cited
-elsewhere as a `git clean` failure. The source shows the agent actually ran a
-PowerShell `Get-ChildItem -Recurse | Remove-Item -Force` sweep plus `rm -rf`.
-The loss was identical; the command was not. That correction mattered, because
-a database whose entries cannot survive someone clicking the link is worth
-nothing.
+One real example, so the standard is clear: STUPID-2026-0078 was described
+as a `git clean` failure — in the maintainer's own launch draft for this
+database, written two days after the record and never posted. The record
+itself always said what the source shows: a PowerShell
+`Get-ChildItem -Recurse | Remove-Item -Force` sweep plus `rm -rf`. The loss
+was identical; the command was not. An earlier version of this paragraph said
+"cited elsewhere" without saying the elsewhere was the maintainer, which
+overstated it. The point stands either way: a database whose entries cannot
+survive someone clicking the link is worth nothing, and neither can a summary
+of one.
 
 ## Licence
 
